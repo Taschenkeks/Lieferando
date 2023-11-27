@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.svg" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>PokeRando</title>
+</head>
+
+<body onload="showMenu()">
+
+    <div onclick="showBasketmobile()" class="show-basket-icon">
+        <img class="cartImg" src="img/cart.svg">
+        <span> Öffne Warenkorb </span>
+    </div>
+    <div id="hide-Menu" onclick="hideBasket()" class="show-basket-icon d-none">
+        <img class="cartImg" src="img/cart.svg">
+        <span> Schließe Warenkorb </span>
+    </div>
+
+    <section class="header"> <!--Header-->
+
+        <div class="logo-container">
+            <img class="logo" src="./img/logo.svg" alt="Logo">
+            <span class="logo1">PokeRando</span>
+        </div>
+
+        <input class="adress" type="text" placeholder="Lieferadresse eingeben">
+
+        <div class="language">
+            <img class="german" src="./img/deutschland.png" alt="german">
+            <img class="burger-menu" src="./img//burger-menu.svg" alt="burger-menu">
+        </div>
+
+    </section> <!--HeaderEnde-->
+    <div class="contentAll">
+        <div class="main"> <!--Maincontent-->
+            <div>
+                <img class="mainPicture" src="./img/banner.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="content-left">
+                    <div class="information">
+                        <h1 class="headline">Cardshop Sonthofen</h1>
+                        <img class="rating" src="./img/rating.png" alt="Rating">
+                    </div>
+                    <div class="orderInfo">
+                        <img class="miniimg" src="./img/cart.svg" alt="Cart">
+                        <span>Min. 25,00 €</span>
+                        <img class="miniimg" src="./img/bicycle.ico" alt="bicycle">
+                        <span>Kostenlos</span>
+
+                    </div>
+                </div>
+                <div class="content-right">
+                    <img class="iconHeart" src="./img/notifications.svg" alt="heart">
+                    <img class="iconI" src="./img/letter-i.png" alt="Information">
+
+                </div>
+            </div>
+
+            <div class="selectionMenu">
+                <img class="searchImg" src="./img/search.svg" alt="search">
+                <span class="spanCursor">Booster</span>
+                <span class="spanCursor">Displays</span>
+                <span class="spanCursor">TTB´s</span>
+                <span class="spanCursor">Zubehör</span>
+                <img class="arrow" src="./img/arrow-right.svg" alt="arrow">
+
+
+            </div>
+
+            <div class="Bestseller">
+                <span>Bestseller</span>
+            </div>
+
+            <div class="orderContent" id="order-content"></div>
+
+        </div> <!--MaincontentEnde-->
+        <div class="basket" id="basket2">
+            <div class="cartHeader">
+                <img class="cart" src="./img/cart.svg" alt="">
+                <h2 class="basketText" >Warenkorb</h2>
+            </div>
+            <div class="basketContent" id="basket">
+
+
+
+
+
+            </div>
+            <div id="total-amount"></div>
+
+        </div>
+    </div>
+
+    <div onclick="closePopup()" id="paypopup" ></div>
+
+</body>
+
+</html>
